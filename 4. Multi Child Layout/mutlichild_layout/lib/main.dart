@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/basic.dart';
-
 void main() {
   var app = MaterialApp(
     title: 'Flutter App',
@@ -16,10 +14,23 @@ void main() {
       ),
       body: Center(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center, // Centre ho jata hai
           children: [
             Text('I am text line one'),
             Text('I am text line one'),
+            ElevatedButton(
+              
+              onPressed: () {},
+              style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.red),
+                  padding: MaterialStateProperty.all(EdgeInsets.all(50)),
+                  textStyle:
+                  MaterialStateProperty.all(TextStyle(fontSize: 30))),
+              child: const Text('Login'),
+              
+              
+            ),
           ],
         ),
       ),
