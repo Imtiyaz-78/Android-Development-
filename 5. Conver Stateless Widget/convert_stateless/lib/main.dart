@@ -29,10 +29,10 @@ class MyApp extends StatelessWidget {
               ElevatedButton(
                 onPressed: () {},
                 style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.red),
-                    padding: MaterialStateProperty.all(EdgeInsets.all(50)),
+                    backgroundColor: MaterialStateProperty.all(Colors.blue),
+                    padding: MaterialStateProperty.all(EdgeInsets.all(30)),
                     textStyle:
-                        MaterialStateProperty.all(TextStyle(fontSize: 30))),
+                    MaterialStateProperty.all(TextStyle(fontSize: 30))),
                 child: const Text('Signup'),
               ),
             ],
