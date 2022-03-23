@@ -1,3 +1,4 @@
+// Dice Roller apps
 import 'package:flutter/material.dart';
 import 'HomePage.dart';
 
@@ -16,7 +17,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-
-
-
