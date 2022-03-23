@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'dart:math';
 
@@ -52,9 +54,21 @@ class _HomePageStateState extends State<HomePage> {
       color: currenColor,
       child: Center(
         child: ElevatedButton(
-          child: Text('Press Change'),
-          onPressed: setRandomColor,
+          child: Text(
+            'Press Change',
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          onPressed: () {
+            // or direct setRandomColor,
+            setRandomColor();
+          },
           style: ElevatedButton.styleFrom(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(30.0),
+              ),
               primary: Colors.teal,
               padding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
               textStyle: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
