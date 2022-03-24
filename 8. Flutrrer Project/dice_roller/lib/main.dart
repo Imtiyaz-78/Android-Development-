@@ -10,9 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Dice Roller',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.yellow,
-      ),
+      theme: ThemeData(primarySwatch: Colors.cyan),
       home: HomePage(),
     );
   }
